@@ -27,29 +27,32 @@ def end(project_name):
 
 
 def createStructure():
-    createDir('src')
-    createDir('src/config')
-    createDir('src/config/routes')
-    createDir('src/config/themes')
-    createDir('src/constats')
-    createDir('src/core')
-    createDir('src/core/auth')
-    createDir('src/core/auth/forgot_password')
-    createDir('src/core/auth/login')
-    createDir('src/core/auth/register')
-    createDir('src/core/modules')
-    createDir('src/core/modules/dashboard')
-    createDir('src/core/modules/dashboard/bloc')
-    createDir('src/core/modules/dashboard/models')
-    createDir('src/core/modules/dashboard/repository')
-    createDir('src/core/modules/dashboard/screens')
-    createDir('src/ui')
-    createDir('src/utils')
-    createDir('src/utils/helpers')
-    createDir('src/utils/mixin')
-    createDir('src/utils/services')
-    createDir('src/utils/ui')
-    createDir('src/widgets')
+    createDir('assets')
+    createDir("assets/images")
+    createDir("assets/fonts")
+    createDir('lib/src')
+    createDir('lib/src/config')
+    createDir('lib/src/config/routes')
+    createDir('lib/src/config/themes')
+    createDir('lib/src/constats')
+    createDir('lib/src/core')
+    createDir('lib/src/core/auth')
+    createDir('lib/src/core/auth/forgot_password')
+    createDir('lib/src/core/auth/login')
+    createDir('lib/src/core/auth/register')
+    createDir('lib/src/core/modules')
+    createDir('lib/src/core/modules/dashboard')
+    createDir('lib/src/core/modules/dashboard/bloc')
+    createDir('lib/src/core/modules/dashboard/models')
+    createDir('lib/src/core/modules/dashboard/repository')
+    createDir('lib/src/core/modules/dashboard/screens')
+    createDir('lib/src/ui')
+    createDir('lib/src/utils')
+    createDir('lib/src/utils/helpers')
+    createDir('lib/src/utils/mixin')
+    createDir('lib/src/utils/services')
+    createDir('lib/src/utils/ui')
+    createDir('lib/src/widgets')
 
 
 def changeDir(dir_name):
@@ -67,7 +70,7 @@ def createFlutterProject(project_name):
 
     sp.check_output(create_flutter_project)
 
-    changeDir(project_name + '/lib')
+    changeDir(project_name)
 
 
 def main():

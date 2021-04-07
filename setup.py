@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="auto-flutter",
-    version="1.0.1",
+    version="1.1.0",
     author="jspw",
     author_email="mhshifat757@gmail.com",
     description="Auto Flutter is a python package to create structured base flutter projects.",
@@ -14,16 +14,16 @@ setuptools.setup(
     url="https://github.com/jspw/Auto-Flutter",
     license="GNU General Public License v3.0",
     packages=setuptools.find_packages(),
-    install_requires=[""],
+    install_requires=[],
     classifiers=[
         "Programming Language :: Python :: 3",
-       "License :: OSI Approved :: GNU General Public License v3.0",
-        "Operating System :: Linux (Dabian Based)",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: POSIX :: Linux",
     ],
     python_requires='>=3.6',
     entry_points={
         "console_scripts": [
-            "auto-flutter=auto_flutter.src.__main__:main",
+            "auto-flutter=auto_flutter.__main__:main",
         ]
     },
 )
